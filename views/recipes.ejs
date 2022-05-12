@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html leng="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azamat and Dilyara cooking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="public/css/recipes.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100px;
+        }
+
+        body{
+            background-color: #fafafa;
+            font-family: Trebuchet MS, Helvetica;
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-family: 'Roboto Slab', serif;
+            font-weight: lighter;
+        }
+        h6{
+            color: white;
+        }
+
+        /*Шапка*/
+
+        #title {
+            width: 100%;
+            padding: 10px 0;
+            background: transparent;
+            float: left;
+
+        }
+
+
+        /*.container-fluid {
+            padding: 3% 15%;
+        }*/
+        .navbar {
+            padding-bottom: 4em;
+        }
+        .navbar-brand {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .nav-item {
+            padding: 0px 15px;
+            font-size: 1em;
+        }
+        .nav-link{
+            font-size: 1.2em;
+
+        }
+
+        #about {
+            text-align: center;
+            font-size: 1em;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+
+        #about > a {color: #fff;}
+
+        #about > a:hover{
+            color: #b0b0b0;
+            text-decoration: underline;
+        }
+
+        #about > a:not(:last-child){
+            margin-right: 7%;
+        }
+
+        .fixed {
+            z-index: 5000;
+            background-color: #fff;
+            border-bottom: 1px solid silver;
+        }
+
+        header.fixed #logo {
+            color: #343434;
+        }
+
+        .fixed #about a {color: #343434;}
+        .fixed #about a:hover {color: #7c7c7c;}
+
+        /* Основное */
+        p {
+            font-size: 16px;
+            color: black;
+            background-color: white;
+            margin: 0 0 0 0;
+            padding: 0;
+            line-height: 1.6;
+
+        }
+        .content_block {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block2 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block3 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block4 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block5 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block6 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block7 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block8 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block9 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block10 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block11 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_block12 {
+            overflow: scroll;
+            width: 400px;
+            height: 200px;
+        }
+        .content_toggle {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle:active {
+            background: gray;
+        }
+
+
+        .content_toggle2 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle2:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle2:active {
+            background: gray;
+        }
+
+
+        .content_toggle3 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle3:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle3:active {
+            background: gray;
+        }
+
+
+        .content_toggle4 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle4:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle4:active {
+            background: gray;
+        }
+        .content_toggle5 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle5:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle5:active {
+            background: gray;
+        }
+        .content_toggle6 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle6:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle6:active {
+            background: gray;
+        }
+        .content_toggle7 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle7:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle7:active {
+            background: gray;
+        }
+        .content_toggle8 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle8:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle8:active {
+            background: gray;
+        }
+        .content_toggle9 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle9:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle9:active {
+            background: gray;
+        }
+        .content_toggle10 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle10:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle10:active {
+            background: gray;
+        }
+        .content_toggle11 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle11:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle11:active {
+            background: gray;
+        }
+        .content_toggle12 {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle12:hover {
+            color: black;
+            background: gray;
+            border-bottom: 3px solid black;
+        }
+        .content_toggle12:active {
+            background: gray;
+        }
+        /* Преимущества */
+        #breakfast {
+            width: 100%;
+            background-image: url(https://www.eatthis.com/wp-content/uploads/sites/4/2020/07/breakfast-foods.jpg?quality=82&strip=all);
+            background-blend-mode: multiply;
+            background-color: white;
+            background-size: cover;
+            text-align: center;
+            color: black;
+            font-size: 3em;
+        }
+
+        #breakfast .img {
+            float: left;
+            width: 25%;
+            margin-right: 15%;
+            margin-top: 10px;
+        }
+
+        #breakfast .img:nth-child(even) {
+            margin-left: 20%;
+        }
+
+        #breakfast img {
+            background-color: #fafafa;
+            padding: 5px;
+            border: 2px solid silver;
+            float: left;
+            width: 100%;
+            max-width: 375px;
+            max-height: 275px;
+            min-width: 375px;
+            min-height: 275px;
+        }
+
+
+        @media(min-width: 1001px){
+            #breakfast {
+                font-size: 3em;
+                height: 1000px;
+            }
+        }
+
+        @media(max-width: 1000px) and (min-width: 651px){
+            #breakfast {
+                font-size: 2em;
+                height: 600px;
+            }
+        }
+
+        @media(max-width: 650px){
+            #breakfast {
+                font-size: 1.3em;
+                height: 500px;
+            }
+        }
+
+
+
+        #breakfast {
+            color: #fff;
+        }
+
+
+        /* Преимущества */
+        #indent {
+            width: 100%;
+            height: 15%;
+            background-image: url(https://oir.mobi/uploads/posts/2021-03/1616439425_51-p-belii-fon-chistii-dlya-fotoshopa-64.jpg);
+            background-color: #fff;
+            text-align: center;
+            color: #ffffff;
+            font-size: 1em;
+        }
+        #indent h6{
+            color: white;
+        }
+        #lunch {
+            width: 100%;
+            background-image: url(http://res.cloudinary.com/simpleview/image/upload/v1600178446/clients/sandysprings/Let_s_Do_Lunch_Listing_962ffd79-0f60-4202-9003-0ddc5796d36f.jpg);
+            background-blend-mode: multiply;
+            background-color: #EF9F94;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+            font-size: 3em;
+        }
+
+        #lunch .img {
+            float: left;
+            width: 25%;
+            margin-right: 15%;
+            margin-top: 10px;
+        }
+
+        #lunch .img:nth-child(even) {
+            margin-left: 20%;
+        }
+
+        #lunch img {
+            background-color: #fafafa;
+            padding: 5px;
+            border: 2px solid silver;
+            float: left;
+            width: 100%;
+            max-width: 375px;
+            max-height: 275px;
+            min-width: 375px;
+            min-height: 275px;
+        }
+
+
+        @media(min-width: 1001px){
+            #lunch {
+                font-size: 3em;
+                height: 1000px;
+            }
+        }
+
+        @media(max-width: 1000px) and (min-width: 651px){
+            #lunch {
+                font-size: 2em;
+                height: 600px;
+            }
+        }
+
+        @media(max-width: 650px){
+            #lunch {
+                font-size: 1.3em;
+                height: 500px;
+            }
+        }
+
+
+        #lunch {
+            color: #fff;
+        }
+
+        /* Контакты */
+        #indent {
+            width: 100%;
+            height: 15%;
+            background-image: url(https://oir.mobi/uploads/posts/2021-03/1616439425_51-p-belii-fon-chistii-dlya-fotoshopa-64.jpg);
+            background-color: #fff;
+            text-align: center;
+            color: #ffffff;
+            font-size: 1em;
+        }
+        #indent{
+            color: #ffffff;
+        }
+        #dinner {
+            width: 100%;
+            background-image: url(https://stockholmtravelguide.com/wp-content/uploads/2018/02/Stockholm-restaurants-the-10-best-1200x630px.jpg);
+            background-blend-mode: multiply;
+            background-color: #999CE5;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+            font-size: 3em;
+        }
+
+        #dinner .img {
+            float: left;
+            width: 25%;
+            margin-right: 15%;
+            margin-top: 10px;
+        }
+
+        #dinner .img:nth-child(even) {
+            margin-left: 20%;
+        }
+
+        #dinner img {
+            background-color: #fafafa;
+            padding: 5px;
+            border: 2px solid silver;
+            float: left;
+            width: 100%;
+            max-width: 375px;
+            max-height: 275px;
+            min-width: 375px;
+            min-height: 275px;
+        }
+
+
+        @media(min-width: 1001px){
+            #dinner {
+                font-size: 3em;
+                height: 1000px;
+            }
+        }
+
+        @media(max-width: 1000px) and (min-width: 651px){
+            #dinner {
+                font-size: 2em;
+                height: 600px;
+            }
+        }
+
+        @media(max-width: 650px){
+            #dinner {
+                font-size: 1.3em;
+                height: 500px;
+            }
+        }
+
+        #dinner h1 {
+            padding-top: 5%;
+        }
+
+        #dinner {
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<section id="title">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="cook1">AITU cooking</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#breakfast">Breakfast</a>
+                        <a class="nav-link" href="#lunch">Lunch</a>
+                        <a class="nav-link" href="#dinner">Dinner</a>
+                        <a class="nav-link" href="#">Desserts</a>
+                    </div>
+            </div>
+        </nav>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<section id="breakfast">
+    <h1>Breakfast</h1>
+    <div class="img">
+        <img src="https://e3.edimdoma.ru/data/recipes/0002/1292/21292-ed4_wide.jpg?1468800918" alt="">
+        <a class="content_toggle" href="#">Scrambled eggs</a>
+
+        <div class="content_block" style="display: none;">
+            <p>Lightly whisk 2 large eggs, 6 tbsp single cream or full cream milk and a pinch of salt together until the mixture has just one consistency.</p>
+
+            <p>STEP 2
+                Heat a small non-stick frying pan for a minute or so, then add a knob of butter and let it melt. Don’t allow the butter to brown or it will discolour the eggs.</p>
+
+            <p>STEP 3
+                Pour in the egg mixture and let it sit, without stirring, for 20 seconds. Stir with a wooden spoon, lifting and folding it over from the bottom of the pan.</p>
+
+            <p>STEP 4
+                Let it sit for another 10 seconds then stir and fold again.</p>
+
+            <p>STEP 5
+                Repeat until the eggs are softly set and slightly runny in places. Remove from the heat and leave for a moment to finish cooking.</p>
+
+            <p>STEP 6
+                Give a final stir and serve the velvety scramble without delay.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://n1s1.hsmedia.ru/7f/f4/0d/7ff40dc541d0439fa8340fd2e32be117/728x542_1_2eb6067cd7f06514357e8a901136e861@1000x745_0xac120003_18860911011562657612.jpg" alt="">
+        <a class="content_toggle2" href="#">Bruschetta </a>
+
+        <div class="content_block2" style="display: none;">
+            <p>STEP 1
+                Mix the sugar snap peas, peas, broad beans and radish with the chillies and herbs in a bowl. Add the chardonnay vinegar and olive oil, and toss to coat.</p>
+
+            <p>STEP 2
+                Heat grill to high. Brush the bread with oil and sprinkle with sea salt. Grill for 2 mins each side until lightly charred. Put each piece of toast on a small plate, then halve burratas and gently spread over the toast. Divide the summer beans, pile on top and season to serve.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://s1.eda.ru/StaticContent/Photos/120131083853/170102165250/p_O.jpg" alt="">
+        <a class="content_toggle3" href="#">Greek Salad</a>
+
+        <div class="content_block3" style="display: none;">
+            <p>STEP 1
+                Place 4 large vine tomatoes, cut into wedges, 1 peeled, deseeded and chopped cucumber, ½ a thinly sliced red onion, 16 Kalamata olives, 1 tsp dried oregano, 85g feta cheese chunks and 4 tbsp Greek extra virgin olive oil in a large bowl.</p>
+
+            <p>STEP 2
+                Lightly season, then serve with crusty bread to mop up all of the juices.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://www.gastronom.ru/binfiles/images/20180601/b73f3d12.jpg" alt="">
+        <a class="content_toggle4" href="#">Millet porridge </a>
+
+        <div class="content_block4" style="display: none;">
+            <p>STEP 1
+                For the compote, put the dates in a pan with 150ml water, bring to the boil and stir well so they break down. Tip in the frozen fruit and cinnamon stick and cook over a medium heat, stirring every now and then for a couple of minutes. Don’t worry about fully thawing larger fruits, as they will defrost in the residual heat and retain their shape in the compote (if you have large strawberries in the mix, you can halve these as they soften). Leave to cool. Will then keep chilled for up to four days.</p>
+
+            <p>STEP 2
+                Rinse the millet in a sieve, then tip into a deep, heavy-based saucepan and pour in the almond milk and 350ml water. Put over a low heat and once bubbling, leave to simmer for 10-12 mins, stirring frequently until the millet grains are tender, but nutty.</p>
+
+            <p>STEP 3
+                Serve a third of the porridge with a third of the compote, between two people, on the first day of the Healthy Diet Plan. Add a little extra almond milk to serve with a few mint leaves scattered over. Chill the remainder for the subsequent two days. Will keep covered and chilled for up to four days. To serve on another day, reheat portions of the porridge in a pan with extra almond milk or water to loosen. Serve with the chilled compote.</p>
+        </div>
+    </div>
+    </div>
+</section>
+<div id="#indent"><h6>Next</h6></div>
+<section id="lunch">
+    <h1>Lunch</h1>
+    <div class="img">
+        <img src="https://eda.ru/img/eda/c620x415/s1.eda.ru/StaticContent/Photos/120213184513/120213184800/p_O.jpg" alt="">
+        <a class="content_toggle5" href="#">Beef stroganoff </a>
+
+        <div class="content_block5" style="display: none;">
+            <p>STEP 1
+                Heat 1 tbsp olive oil in a non-stick frying pan then add 1 sliced onion and cook on a medium heat until completely softened, around 15 mins, adding a little splash of water if it starts to stick.</p>
+
+            <p>STEP 2
+                Crush in 1 garlic clove and cook for 2-3 mins more, then add 1 tbsp butter.</p>
+
+            <p>STEP 3
+                Once the butter is foaming a little, add 250g sliced mushrooms and cook for around 5 mins until completely softened.</p>
+
+            <p>STEP 4
+                Season everything well, then tip onto a plate.</p>
+
+            <p>STEP 5
+                Tip 1 tbsp plain flour into a bowl with a big pinch of salt and pepper, then toss 500g sliced fillet steak in the seasoned flour.</p>
+
+            <p>STEP 6
+                Add the steak pieces to the pan, splashing in a little oil if the pan looks dry, and fry for 3-4 mins, until well coloured.</p>
+
+            <p>STEP 7
+                Tip the onions and mushrooms back into the pan. Whisk 150g crème fraîche, 1 tsp English mustard and 100ml beef stock together, then stir into the pan.</p>
+
+            <p>STEP 8
+                Cook over a medium heat for around 5 mins.</p>
+
+            <p>STEP 9
+                Scatter with some chopped parsley, and serve with pappardelle or rice.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://img.delo-vcusa.ru/2020/11/Borshh-s-yablokami.jpg" alt="">
+        <a class="content_toggle6" href="#">Borsch</a>
+
+        <div class="content_block6" style="display: none;">
+            <p>STEP 1
+                To make the stock, put the meat, whole onion, bay leaf and 2 litres of lightly salted cold water in a large saucepan. Cook over a very low heat for 1 hr 30 mins or until the beef shin is soft and falls apart easily – this can take up to 3 hrs. Skim off the scum with a spoon from time to time. Break up any larger pieces of beef into the broth, remove the whole onion and discard.</p>
+
+            <p>STEP 2
+                Add the potatoes to the borscht, season well with salt and pepper and cook for 10-15 mins until tender. Meanwhile, heat the sunflower oil in a large, deep frying pan. Add the diced onion and carrot, and cook over a medium heat, stirring, until the carrot is soft and is about to start caramelising.</p>
+
+            <p>STEP 3
+                Add the beetroot and cook for around 5 mins, stirring occasionally. Add the red pepper, if using, and cook for another 2 mins, then add the tomatoes and prunes, stir, then increase the heat and boil to reduce slightly, before adding everything to the borscht.</p>
+
+            <p>STEP 4
+                Add the shredded cabbage and the kidney beans, and cook for 7-10 mins or until tender. Serve with a dollop of sour cream or crème fraîche, lots of chopped dill and some crusty bread.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://recipes.av.ru//media/recipes/100343_picture_GBiFPUA.jpg" alt="">
+        <a class="content_toggle7" href="#">Brisket</a>
+
+        <div class="content_block7" style="display: none;">
+            <p>STEP 1
+                Heat the oven to 150C/130C fan/gas 2. Mix the stock cube with the tarragon and pepper in a small bowl. Rub over the brisket and season. Heat the oil in a large flameproof casserole dish or roasting tin over a medium-high heat, add the brisket and brown well on all sides.</p>
+
+            <p>STEP 2
+                Stir in the ale and beef extract, then tip in the sugar and onion flakes and add enough of the beef stock to come two-thirds of the way up the sides of the brisket. Bring to the boil, cover and roast in the oven for 3 hrs, checking every 30 mins to see if the brisket is tender (but you may need to roast it for up to 5 hrs). Transfer the brisket to a board and leave to rest for 15 mins. Slice and serve with the stock spooned over and some steamed long stem broccoli on the side, if you like.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://static.1000.menu/img/content-v2/8a/93/44964/svinoe-jarkoe-s-kartoshkoi-morkovkoi-i-lukom_1585987435_1_max.jpg" alt="">
+        <a class="content_toggle8" href="#">Roast </a>
+
+        <div class="content_block8" style="display: none;">
+            <p>STEP 1
+                Heat the oven to 220C/200C fan/gas 8. Add the oil to a large flameproof baking tray and put in the oven for the oil to heat up.</p>
+
+            <p>STEP 2
+                Bring a large pan of salted water to the boil, tip in the potatoes and the peelings (to impart extra flavour) and simmer for 8-10 mins. Drain the potatoes and discard the peelings. Leave to steam-dry for 15 mins, then return the potatoes to the pan, put the lid on and gently shake to lightly rough up the edges.</p>
+
+            <p>STEP 3
+                Remove the tray from the oven and put directly on your hob over a medium heat. Add the butter to the hot oil and, using tongs, add the potatoes to the tray, one by one, carefully turning them in the fat, and leaving a little space between them. Reduce the oven to 200C/180C fan/gas 6. Nestle the lemon thyme in amongst the potatoes, along with the garlic. Sprinkle over the sea salt and return to the oven to roast for 1 hr, turning every once in a while, until golden and crisp.</p>
+        </div>
+    </div>
+    </div>
+</section>
+<div id="#indent"><h6>N</h6></div>
+<div id="dinner">
+    <h1>Dinner</h1>
+    <div class="img">
+        <img src="https://cdn.lifehacker.ru/wp-content/uploads/2019/01/1.-Gaus-Alex_shutterstock_1599218242-800x400.jpg" alt="">
+        <a class="content_toggle9" href="#">Fried salmon</a>
+
+        <div class="content_block9" style="display: none;">
+            <p>STEP 1
+                Generously season the salmon fillets with salt and pepper. Put the oil and butter in a non-stick frying pan over a medium heat, swirling around the pan until melted and foaming, then turn up the heat. Once the butter starts bubbling, add the salmon fillets to the pan, skin-side-down, and fry for 3 mins until crisp. Flip the fillets over, lower the heat and cook for 2 mins more, then drizzle with the lemon juice. Transfer the salmon to a plate and baste with any of the buttery juices left in the pan.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://cdn.lifehacker.ru/wp-content/uploads/2019/01/5ff1ffc8683abb2333c1caae2e64450b_1600774479-e1600774685704-800x400.jpg" alt="">
+        <a class="content_toggle10" href="#">Tomato cheeseburger </a>
+
+        <div class="content_block10" style="display: none;">
+            <p>In a medium skillet over medium heat, heat oil. Add onion and cook until tender, about 5 minutes, then stir in garlic. Add ground beef, breaking up the meat with a wooden spoon, and cook until the beef is no longer pink, about 6 minutes. Drain fat. Season with salt and pepper, then stir in ketchup and mustard.</p>
+            <p>Flip tomatoes so they are stem-side down. Cut the tomatoes into six wedges, being careful to not cut completely through the tomato. Carefully spread open the wedges. Divide cooked ground beef evenly among the tomatoes, then top each with cheese and lettuce.</p>
+            <p>Garnish with pickle coins and sesame seeds.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://cdn.lifehacker.ru/wp-content/uploads/2018/12/gallery-1458849636-delish-shrimp-pesto-penne_1546060129-e1546060168538.jpg" alt="">
+        <a class="content_toggle11" href="#">Shrimp pasta </a>
+
+        <div class="content_block11" style="display: none;">
+            <p>In a large pot over medium heat, heat oil. Add onions, bell peppers, tomatoes, and squashes. Cook until softened, about 5 minutes. Add garlic and cook until fragrant, about 1 minute more.</p>
+            <p>Add pasta, water, half-and-half, oregano, salt, pepper, and red pepper flakes and season with salt and pepper. Bring to a boil, and cook for 15 minutes. Add shrimp and cook until shrimp is opaque and pasta is al dente, 3 to 5 minutes more. Stir in Parmesan. </p>
+            <p>Top with basil before serving.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://cdn.lifehacker.ru/wp-content/uploads/2019/01/12.-Robyn-Mackenzie_shutterstock_1599218256-800x400.jpg" alt="">
+        <a class="content_toggle12" href="#">Pie with spinach and feta cheese</a>
+
+        <div class="content_block12" style="display: none;">
+            <p>Preheat the oven to 200°C/400°F/gas 6.</p>
+            <p>Toast the pine nuts in a large ovenproof frying pan over a medium heat for 1 to 2 minutes, or until golden and smelling fantastic, tossing occasionally.</p>
+            <p>Crack the eggs into a large mixing bowl, crumble in the feta, then grate in the Cheddar. Season with a pinch of black pepper and a couple of pinches of dried oregano.</p>
+            <p>Finely grate in the lemon zest, drizzle in a little oil, then toss in the toasted pine nuts. Mix well.</p>
+            <p>Melt the butter in the frying pan over a medium heat with a drizzle of oil, add half the spinach, stirring until wilted, then when there’s space, add the remaining spinach, stirring regularly until wilted.</p>
+            <p>Lay a 50cm strip of greaseproof paper out on a clean work surface, rub lightly with oil and scrunch up, then flatten out again.</p>
+            <p>Arrange 4 sheets of filo in a large rectangle on the greaseproof paper, overlapping at the edges, so that it’s almost covering the greaseproof.</p>
+            <p>Rub the filo with a little oil, sprinkle with sea salt, pepper and a pinch of cayenne pepper. Repeat until you have 3 layers.</p>
+            <p>Stir the wilted spinach into the egg mixture, then grate in half the nutmeg and mix well.</p>
+            <p>Slide the greaseproof and filo into the empty frying pan, so that the edges spill over, then push down into the sides of the pan.</p>
+            <p>Pour in the spinach mixture and spread out evenly, then fold the filo up over the filling to cover.</p>
+            <p>Place the pan over a medium heat for 2 minutes, just to get the bottom cooking, then transfer to the top shelf of the oven for 18 to 20 minutes, or until golden and crisp. Delicious served with a fresh seasonal salad.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.content_toggle').click(function(){
+            $('.content_block').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle2').click(function(){
+            $('.content_block2').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle3').click(function(){
+            $('.content_block3').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle4').click(function(){
+            $('.content_block4').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle5').click(function(){
+            $('.content_block5').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle6').click(function(){
+            $('.content_block6').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle7').click(function(){
+            $('.content_block7').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle8').click(function(){
+            $('.content_block8').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle9').click(function(){
+            $('.content_block9').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle10').click(function(){
+            $('.content_block10').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle11').click(function(){
+            $('.content_block11').slideToggle(300);
+            return false;
+        });
+    });
+    $(document).ready(function(){
+        $('.content_toggle12').click(function(){
+            $('.content_block12').slideToggle(300);
+            return false;
+        });
+    });
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
