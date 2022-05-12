@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100px;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+h6{
+    color: white;
+}
+
+/*Шапка*/
+
+#title {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    float: left;
+
+}
+
+
+/*.container-fluid {
+	padding: 3% 15%;
+}*/
+.navbar {
+    padding-bottom: 4em;
+}
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0px 15px;
+    font-size: 1em;
+}
+.nav-link{
+    font-size: 1.2em;
+
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a {color: #fff;}
+
+#about > a:hover{
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+
+.fixed #about a {color: #343434;}
+.fixed #about a:hover {color: #7c7c7c;}
+
+/* Основное */
+p {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+
+}
+.content_block {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block2 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block3 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block4 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block5 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block6 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block7 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block8 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block9 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block10 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block11 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_block12 {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+.content_toggle {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle:active {
+    background: gray;
+}
+
+
+.content_toggle2 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle2:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle2:active {
+    background: gray;
+}
+
+
+.content_toggle3 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle3:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle3:active {
+    background: gray;
+}
+
+
+.content_toggle4 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle4:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle4:active {
+    background: gray;
+}
+.content_toggle5 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle5:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle5:active {
+    background: gray;
+}
+.content_toggle6 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle6:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle6:active {
+    background: gray;
+}
+.content_toggle7 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle7:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle7:active {
+    background: gray;
+}
+.content_toggle8 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle8:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle8:active {
+    background: gray;
+}
+.content_toggle9 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle9:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle9:active {
+    background: gray;
+}
+.content_toggle10 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle10:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle10:active {
+    background: gray;
+}
+.content_toggle11 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle11:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle11:active {
+    background: gray;
+}
+.content_toggle12 {
+    display: inline-block;
+    padding: 15px 20px;
+    background: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+.content_toggle12:hover {
+    color: black;
+    background: gray;
+    border-bottom: 3px solid black;
+}
+.content_toggle12:active {
+    background: gray;
+}
+/* Преимущества */
+#breakfast {
+    width: 100%;
+    background-image: url(https://www.eatthis.com/wp-content/uploads/sites/4/2020/07/breakfast-foods.jpg?quality=82&strip=all);
+    background-blend-mode: multiply;
+    background-color: white;
+    background-size: cover;
+    text-align: center;
+    color: black;
+    font-size: 3em;
+}
+
+#breakfast .img {
+    float: left;
+    width: 25%;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+#breakfast .img:nth-child(even) {
+    margin-left: 20%;
+}
+
+#breakfast img {
+    background-color: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 375px;
+    max-height: 275px;
+    min-width: 375px;
+    min-height: 275px;
+}
+
+
+@media(min-width: 1001px){
+    #breakfast {
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media(max-width: 1000px) and (min-width: 651px){
+    #breakfast {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media(max-width: 650px){
+    #breakfast {
+        font-size: 1.3em;
+        height: 500px;
+    }
+}
+
+
+
+#breakfast {
+    color: #fff;
+}
+
+
+/* Преимущества */
+#indent {
+    width: 100%;
+    height: 15%;
+    background-image: url(https://oir.mobi/uploads/posts/2021-03/1616439425_51-p-belii-fon-chistii-dlya-fotoshopa-64.jpg);
+    background-color: #fff;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+}
+#indent h6{
+    color: white;
+}
+#lunch {
+    width: 100%;
+    background-image: url(http://res.cloudinary.com/simpleview/image/upload/v1600178446/clients/sandysprings/Let_s_Do_Lunch_Listing_962ffd79-0f60-4202-9003-0ddc5796d36f.jpg);
+    background-blend-mode: multiply;
+    background-color: #EF9F94;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+#lunch .img {
+    float: left;
+    width: 25%;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+#lunch .img:nth-child(even) {
+    margin-left: 20%;
+}
+
+#lunch img {
+    background-color: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 375px;
+    max-height: 275px;
+    min-width: 375px;
+    min-height: 275px;
+}
+
+
+@media(min-width: 1001px){
+    #lunch {
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media(max-width: 1000px) and (min-width: 651px){
+    #lunch {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media(max-width: 650px){
+    #lunch {
+        font-size: 1.3em;
+        height: 500px;
+    }
+}
+
+
+#lunch {
+    color: #fff;
+}
+
+/* Контакты */
+#indent {
+    width: 100%;
+    height: 15%;
+    background-image: url(https://oir.mobi/uploads/posts/2021-03/1616439425_51-p-belii-fon-chistii-dlya-fotoshopa-64.jpg);
+    background-color: #fff;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+}
+#indent{
+    color: #ffffff;
+}
+#dinner {
+    width: 100%;
+    background-image: url(https://stockholmtravelguide.com/wp-content/uploads/2018/02/Stockholm-restaurants-the-10-best-1200x630px.jpg);
+    background-blend-mode: multiply;
+    background-color: #999CE5;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+#dinner .img {
+    float: left;
+    width: 25%;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+#dinner .img:nth-child(even) {
+    margin-left: 20%;
+}
+
+#dinner img {
+    background-color: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 375px;
+    max-height: 275px;
+    min-width: 375px;
+    min-height: 275px;
+}
+
+
+@media(min-width: 1001px){
+    #dinner {
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media(max-width: 1000px) and (min-width: 651px){
+    #dinner {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media(max-width: 650px){
+    #dinner {
+        font-size: 1.3em;
+        height: 500px;
+    }
+}
+
+#dinner h1 {
+    padding-top: 5%;
+}
+
+#dinner {
+    color: #fff;
+}

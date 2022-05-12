@@ -1,0 +1,129 @@
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(0, 0, 0, .55);
+
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #0000008C;
+
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 0 /*1px solid rgba(255, 255, 255, 0.1)*/;
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+#shop {
+    width: 100%;
+
+    background-image: url(https://img.freepik.com/free-photo/culinary-background-for-recipes-frame-from-ingredients-for-cooking-italian-pasta-grocery-shopping-list-recipe-book-diet-or-vegan-food_336991-239.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    width: 100%;
+}
+img {
+    background-color: #fafafa;
+    padding: 1px;
+    border: 1px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 375px;
+    max-height: 275px;
+    min-width: 375px;
+    min-height: 275px;
+}
+
+#title {
+    width: 100%;
+    background: transparent;
+    float: left;
+
+}
+
+
+.container-fluid {
+    padding: 3% 15%;
+}
+.navbar {
+    padding-bottom: 4em;
+}
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0px 15px;
+    font-size: 1em;
+}
+.nav-link{
+    font-size: 1.2em;
+
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a {color: #fff;}
+
+#about > a:hover{
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+
+.fixed #about a {color: #343434;}
+.fixed #about a:hover {color: #7c7c7c;}
